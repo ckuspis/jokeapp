@@ -1,9 +1,9 @@
-Oct 21, 2019 12:10:41 PM java.util.prefs.WindowsPreferences <init>
+Oct 22, 2019 10:23:36 AM java.util.prefs.WindowsPreferences <init>
 WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-Oct 21, 2019 12:10:41 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+Oct 22, 2019 10:23:36 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'c:\Users\LV3\AppData\Local\Google\Cloud SDK\google-cloud-sdk.staging\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\LV3\Desktop\jokeapp\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-2019-10-21 12:10:41.517:INFO::main: Logging initialized @426ms to org.eclipse.jetty.util.log.StdErrLog
-2019-10-21 12:10:41.564:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+2019-10-22 10:23:37.019:INFO::main: Logging initialized @405ms to org.eclipse.jetty.util.log.StdErrLog
+2019-10-22 10:23:37.058:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
 java.io.IOException: Failed to bind to localhost/127.0.0.1:8080
 	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:346)
 	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:308)
