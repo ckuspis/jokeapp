@@ -50,7 +50,7 @@ class AsyncJoke extends AsyncTask<Void, Void, String> {
             return myApiService.tellJoke().execute().getData();
         } catch (IOException e) {
             mException = e;
-            return "Error";
+            return null;
         }
     }
 
@@ -59,7 +59,12 @@ class AsyncJoke extends AsyncTask<Void, Void, String> {
     protected void onPostExecute(String result) {
         if(mListener != null) {
             if(mException == null){
-                mListener.onSuccess(result);
+                if(result != null)
+                    mListener.onSuccess(result);
+                else{
+                    Exception ex = new NullPointerException();
+                    mListener.onFailure(ex);
+                }
             }
             else{
                 mListener.onFailure(mException);
